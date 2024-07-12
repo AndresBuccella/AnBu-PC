@@ -12,7 +12,7 @@
     <tbody>
         @for(componente of componentes; track componente.nombre){
         <tr>
-            <td><img class="imagen-componente" [src]="componente.imagen" [alt]="componente.nombre"></td>
+            <td><img class="imagen-componente" [src]="componente.imagen" [alt]="componente.nombre" title="1"></td>
             <td>{{componente.nombre}}</td>
             <td>{{componente.caracteristicas}}</td>
             <td>{{componente.precio}}</td>

@@ -1,3 +1,24 @@
 .imagen-componente{
     max-width: 70px;
 }
+td{
+    max-width: max-content;
+    align-content: center;
+    overflow: hidden;
+}
+table{
+    width: 50%;
+}
+.sin-stock{
+    background-color: rgb(255, 125, 125);
+}
+
+#td-nombre{ //Nombre
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+.td-btn{
+    min-width: 100px;
+}

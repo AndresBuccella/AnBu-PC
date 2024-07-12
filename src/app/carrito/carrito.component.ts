@@ -17,4 +17,8 @@ export class CarritoComponent implements OnInit {
     }
     
     ngOnInit(): void { }
+
+    quitarDelCarrito(id: number): void {
+        this.carrito.quitarDelCarrito(id);
+    }
 }

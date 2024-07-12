@@ -29,7 +29,7 @@ export class InputIntegerComponent implements OnInit {
             return;
         }
         if(this.cantidad >= this.max){
-            this.maximoAlcanzado.emit("se alcanzó el máximo")
+            this.cantidad = this.max;
             return;
         }
         this.cantidad++;

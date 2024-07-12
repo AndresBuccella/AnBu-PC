@@ -1,8 +1,8 @@
 <h3>Carrito</h3>
 <ul>
-    @for (componente of (listaDeCompra$ | async); track componente.nombre) {
+    @for (componente of (listaDeCompra$ | async); track componente.id) {
         <li>
-            {{componente.nombre}}: {{componente.cantidad}}
+            {{componente.nombre}}, cantidad: {{componente.cantidad}} <button class="btn btn-danger" (click)="quitarDelCarrito(componente.id)">X</button>
         </li>
     }
 </ul>

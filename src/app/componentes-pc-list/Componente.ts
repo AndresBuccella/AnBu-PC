@@ -1,7 +1,8 @@
 export interface Componente{
     imagen: string,
     nombre: string,
-    fabricante: string,
+    caracteristicas: {},
     precio: number,
-    stock: number
+    stock: number,
+    cantidad: number,
 }

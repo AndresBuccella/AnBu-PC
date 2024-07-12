@@ -4,20 +4,33 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentesPcListComponent } from './componentes-pc-list/componentes-pc-list.component';
-import { SliderComponent } from './slider/slider.component';
+import { AcercaDeComponent } from './acerca-de/acerca-de.component';
+import { PcsArmadasComponent } from './pcs-armadas/pcs-armadas.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { FormsModule } from '@angular/forms';
+import { CarritoComponent } from './carrito/carrito.component';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentesPcListComponent,
-    SliderComponent
+    AcercaDeComponent,
+    PcsArmadasComponent,
+    InputIntegerComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [
-    provideClientHydration()
+      provideHttpClient(
+          withFetch(),
+      ),
+    provideClientHydration(),
   ],
   bootstrap: [AppComponent]
 })

@@ -2,11 +2,11 @@
 
 <nav>
     <ul>
-        <li><a href="">Categorias</a></li>
-        <li><a href="">Componentes</a></li>
-        <li><a href="">PCs armadas</a></li>
-        <li><a href="">Notebooks</a></li>
-        <li><a href="">About</a></li>
+        <li><a [routerLink]="">Categorias</a></li>
+        <li><a [routerLink]="['/componentes']">Componentes</a></li>
+        <li><a [routerLink]="">PCs armadas</a></li>
+        <li><a [routerLink]="">Notebooks</a></li>
+        <li><a [routerLink]="['/acerca']">Acerca</a></li>
     </ul>
 </nav>
 <nav>
@@ -18,13 +18,9 @@
     </ul>
 </nav>
 
-<main>
-    <!--Slider? O imágen fija...-->
-    <div class="slider-componentes">
-        
-    </div>
-</main>
+<router-outlet></router-outlet>
 
 <footer>
-
+    <p>FOOTER</p>
+555312
 </footer>

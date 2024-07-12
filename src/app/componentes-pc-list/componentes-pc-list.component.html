@@ -1,5 +1,36 @@
-@for(componente of componentes; track componente.nombre){
-
-}@empty {
-    
-}
+<table>
+    <thead>
+        <tr>
+            <th>Imagen</th>
+            <th>Nombre</th>
+            <th>Fabricante</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @for(componente of componentes; track componente.nombre){
+        <tr>
+            <td><img class="imagen-componente" [src]="componente.imagen" [alt]="componente.nombre"></td>
+            <td>{{componente.nombre}}</td>
+            <td>{{componente.caracteristicas}}</td>
+            <td>{{componente.precio}}</td>
+            @if (componente.stock > 0) {
+                <td>{{componente.stock}}</td>
+                <td>
+                    <app-input-integer [(cantidad)]="componente.cantidad" [max]="componente.stock" (maximoAlcanzado)="maximoAlcanzado($event)"></app-input-integer>
+                    <button (click)="agregarAlCarrito(componente)">Agregar</button>
+                    <p>cant: {{componente.cantidad}}</p> <p>BORRAR CUANDO ARREGLE LA FUNCION</p>
+                </td>
+            }@else {
+                <td class="sin-stock">SIN STOCK</td>
+            }
+            
+        </tr>
+        }@empty {
+        <tr><span>NO HAY COMPONENTES PARA MOSTRAR</span></tr>
+        }
+    </tbody>
+</table>
+<app-carrito></app-carrito>

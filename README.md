@@ -1,5 +1,10 @@
 # AnBuPC
 
+- Nombre y Apellido: Andres Gabriel Buccella
+- DNI: 38524855
+- Email: andresbuccella@gmail.com
+- Sede: Tandil
+
 AnBu-PC es una aplicación Angular que muestra un listado de componentes de PC. Los usuarios pueden seleccionar la cantidad de componentes, agregarlos al carrito y cancelar la compra. Actualmente, la funcionalidad para confirmar la compra no está implementada.
 
 ## Características

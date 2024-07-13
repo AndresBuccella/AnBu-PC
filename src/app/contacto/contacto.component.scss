@@ -1,0 +1,20 @@
+.contenedor{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+form{
+    padding: 8px;
+    border: 1px solid rgb(189, 88, 16);
+    background-color: rgba(184, 102, 44, 0.815);
+    border-radius: 5px;
+}
+form div{
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 2px;
+}

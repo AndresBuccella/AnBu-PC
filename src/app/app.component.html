@@ -1,26 +1,33 @@
-<h1>AnBu PC</h1>
-
-<nav>
-    <ul>
-        <li><a [routerLink]="">Categorias</a></li>
-        <li><a [routerLink]="['/componentes']">Componentes</a></li>
-        <li><a [routerLink]="">PCs armadas</a></li>
-        <li><a [routerLink]="">Notebooks</a></li>
-        <li><a [routerLink]="['/acerca']">Acerca</a></li>
-    </ul>
-</nav>
-<nav>
-    <ul>
-        <!--Maqueta-->
-        <li>Usuario</li>
-        <li>Carrito</li>
-        <li>Favortios</li>
-    </ul>
-</nav>
+<h1>{{title}}</h1>
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">{{title}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['/componentes']" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/contacto']">Contacto</a>
+          </li>
+          
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
 <router-outlet></router-outlet>
 
 <footer>
-    <p>FOOTER</p>
+    <p>
+        {{title}}2024
+    </p>
 555312
 </footer>

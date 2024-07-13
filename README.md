@@ -1,5 +1,20 @@
 # AnBuPC
 
+AnBu-PC es una aplicación Angular que muestra un listado de componentes de PC. Los usuarios pueden seleccionar la cantidad de componentes, agregarlos al carrito y cancelar la compra. Actualmente, la funcionalidad para confirmar la compra no está implementada.
+
+## Características
+
+- Mostrar un listado de componentes de PC.
+- Permitir a los usuarios seleccionar la cantidad de cada componente.
+- Agregar componentes seleccionados al carrito de compras.
+- Cancelar la compra.
+- Acceder a la seccion de contacto.
+
+## Requisitos
+
+- Node.js
+- Angular CLI
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.6.
 
 ## Development server

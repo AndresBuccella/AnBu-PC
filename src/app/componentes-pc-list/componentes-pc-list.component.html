@@ -1,5 +1,5 @@
 <div class="contenedor">
-    <table class="tabl table-bordered">
+    <table class="table table-bordered">
         <thead>
             <tr>
                 <th>Imagen</th>
@@ -16,7 +16,7 @@
                 <td><img class="imagen-componente" [src]="componente.imagen" [alt]="componente.nombre" title="1"></td>
                 <td id="td-nombre"><p>{{componente.nombre}}</p></td>
                 <td id="td-caracteristicas">{{componente.caracteristicas}}</td>
-                <td id="td-precio">{{componente.precio}}</td>
+                <td id="td-precio">{{componente.precio | currency}}</td>
                 @if (componente.stock > 0) {
                     <td id="td-stock">{{componente.stock}}</td>
                     <td class="td-btn">
@@ -33,5 +33,5 @@
             }
         </tbody>
     </table>
-    <app-carrito></app-carrito>
+    <app-carrito [(componentes)] = "componentes"></app-carrito>
 </div>

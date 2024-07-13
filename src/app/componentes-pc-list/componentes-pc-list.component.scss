@@ -13,12 +13,19 @@ table{
     background-color: rgb(255, 125, 125);
 }
 
-#td-nombre{ //Nombre
-}
+
 .contenedor{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
 }
 .td-btn{
     min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    align-self: center;
 }

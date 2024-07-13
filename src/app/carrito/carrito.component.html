@@ -1,8 +1,15 @@
-<h3>Carrito</h3>
-<ul>
-    @for (componente of (listaDeCompra$ | async); track componente.id) {
-        <li>
-            {{componente.nombre}}, cantidad: {{componente.cantidad}} <button class="btn btn-danger" (click)="quitarDelCarrito(componente.id)">X</button>
-        </li>
+<div class="contenedor">
+    <h3>Carrito</h3>
+    <ul>
+        @for (componente of (listaDeCompra$ | async); track componente.id) {
+            <li>
+                {{componente.nombre}}, cantidad: {{componente.cantidad}} 
+                <button class="btn btn-danger" (click)="quitarDelCarrito(componente.id, componentes)">X</button>
+            </li>
+        }
+    </ul>
+    @if(!carritoEstaVacio()){
+        <button class="btn btn-light" (click)="devolverTodo(componentes)">Cancelar</button>
+        <button class="btn btn-success" (click)="confirmarCompra(componentes)">Continuar compra</button>
     }
-</ul>
+</div>

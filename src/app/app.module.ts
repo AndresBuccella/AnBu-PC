@@ -10,6 +10,7 @@ import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { FormsModule } from '@angular/forms';
 import { CarritoComponent } from './carrito/carrito.component';
 import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
+import { ContactoComponent } from './contacto/contacto.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/
     AcercaDeComponent,
     PcsArmadasComponent,
     InputIntegerComponent,
-    CarritoComponent
+    CarritoComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

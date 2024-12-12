@@ -1,7 +1,6 @@
 # AnBuPC
 
 - Nombre y Apellido: Andres Gabriel Buccella
-- DNI: 38524855
 - Email: andresbuccella@gmail.com
 - Sede: Tandil
 
